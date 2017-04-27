@@ -5,14 +5,14 @@
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">
-              <img src="{{ image.src }}" alt="Sample image">
+              <img src="{{ env.assetsPath }}{{ image.src }}" alt="Sample image">
             </figure>
           </div>
           <div class="card-content">
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="{{ image.src }}" alt="mini">
+                  <img src="{{ env.assetsPath }}{{ image.src }}" alt="mini">
                 </figure>
               </div>
               <div class="media-content">

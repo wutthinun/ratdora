@@ -9,6 +9,7 @@ import { HomeService } from './home.service';
 export class HomeComponent implements OnInit {
 
   private imageAll = [];
+  env = this.service.env;
 
   constructor(private service: HomeService) { }
 
