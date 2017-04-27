@@ -7,7 +7,7 @@ export class HomeService {
   constructor(private http: Http) { }
 
   getItem() {
-    return this.http.get('/app/mock/data.json');
+    return this.http.get('/assets/mock/data.json');
   }
 
 }
