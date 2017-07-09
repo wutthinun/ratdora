@@ -7,17 +7,16 @@ import { HomeService } from './home.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  private imageAll = [];
+  public imageAll = [];
   env = this.service.env;
 
-  constructor(private service: HomeService) { }
+  constructor(private service: HomeService) {}
 
   ngOnInit() {
     this.getData();
   }
 
   getData() {
-    this.service.getItem().subscribe(res => this.imageAll = res.json());
+    this.service.getItem().subscribe(res => (this.imageAll = res.json()));
   }
 }

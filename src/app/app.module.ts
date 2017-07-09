@@ -10,19 +10,13 @@ import { HeaderComponent } from './header/header.component';
 import { HomeService } from './home/home.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    HeaderComponent
-  ],
+  declarations: [AppComponent, HomeComponent, HeaderComponent],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'ratdora' }),
     FormsModule,
     HttpModule
   ],
-  providers: [
-    HomeService
-  ],
+  providers: [HomeService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

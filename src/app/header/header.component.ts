@@ -6,18 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  public toggleActive = 0;
 
-  private toggleActive = 0;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   toggleNav() {
     if (this.toggleActive === 0) {
       this.toggleActive = 1;
-    }else {
+    } else {
       this.toggleActive = 0;
     }
     // let nav = document.getElementById('nav-menu');
@@ -28,5 +26,4 @@ export class HeaderComponent implements OnInit {
     //     nav.className = 'nav-right nav-menu';
     // }
   }
-
 }
